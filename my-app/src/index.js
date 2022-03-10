@@ -50,7 +50,7 @@ class SecondMenu extends React.Component {
     return (
       <Menu borderless className='secondmenu'>
         <Menu className="ui borderless secondmenu menu">
-          <Menu.Item><Image src="https://s3.amazonaws.com/cd.bluemic.com/img/layout/logo-inverted.svg" size='tiny'/></Menu.Item>
+          <Menu.Item onClick><Image src="https://s3.amazonaws.com/cd.bluemic.com/img/layout/logo-inverted.svg" size='tiny'/></Menu.Item>
           <Menu.Item onClick position='right' style={{ fontSize: '13px' }}><strong>MICROPHONES</strong></Menu.Item>
           <Menu.Item onClick style={{ fontSize: '13px' }}><strong>HEADPHONES</strong></Menu.Item>
           <Menu.Item onClick style={{ fontSize: '13px' }}><strong>ACCESSORIES</strong></Menu.Item>
@@ -73,8 +73,9 @@ class BottomMenu extends React.Component {
         <Grid container columns="four">
           <Grid.Column>
             <Image size='huge' src="https://s3.amazonaws.com/cd.bluemic.com/img/layout/logo_footer.svg"/>
-            <Header as='h6' style={{ color: 'white' }}>
-              © Blue (Baltic Latvian Universal Electronics, LLC) 2022 All rights reserved.
+            <Header style={{fontSize: '10px', color: 'white', marginTop: '5px' }} textAlign='center'>
+              © Blue (Baltic Latvian Universal Electronics, LLC) 2022.
+              <Header style={{fontSize: '10px', color: 'white' }} textAlign='center'>All rights reserved.</Header>
             </Header>
           </Grid.Column>
           <Grid.Column>
@@ -90,23 +91,23 @@ class BottomMenu extends React.Component {
           </Grid.Column>
           <Grid.Column>
             <Header style={{ color: 'white' }}>COMPANY</Header>
-            <List>
-              <List.Item style={{ color: 'white' }}>Promotions</List.Item>
-              <List.Item style={{ color: 'white' }}>Careers</List.Item>
-              <List.Item style={{ color: 'white' }}>Contact us</List.Item>
-              <List.Item style={{ color: 'white' }}>Privacy Statement</List.Item>
+            <List style={{ color: 'white' }}>
+              <List.Item>Promotions</List.Item>
+              <List.Item>Careers</List.Item>
+              <List.Item>Contact us</List.Item>
+              <List.Item>Privacy Statement</List.Item>
             </List>
           </Grid.Column>
           <Grid.Column>
             <Header style={{ color: 'white' }}>CUSTOMER CARE</Header>
-            <List>
-              <List.Item style={{ color: 'white' }}>Support</List.Item>
-              <List.Item style={{ color: 'white' }}>Registration</List.Item>
-              <List.Item style={{ color: 'white' }}>Find a Dealer</List.Item>
-              <List.Item style={{ color: 'white' }}>Legacy Products</List.Item>
-              <List.Item style={{ color: 'white' }}>Student Discounts</List.Item>
-              <List.Item style={{ color: 'white' }}>Certified Refurbished Products</List.Item>
-              <List.Item style={{ color: 'white' }}>Recycling</List.Item>
+            <List style={{ color: 'white' }}>
+              <List.Item>Support</List.Item>
+              <List.Item>Registration</List.Item>
+              <List.Item>Find a Dealer</List.Item>
+              <List.Item>Legacy Products</List.Item>
+              <List.Item>Student Discounts</List.Item>
+              <List.Item>Certified Refurbished Products</List.Item>
+              <List.Item>Recycling</List.Item>
             </List>
           </Grid.Column>
         </Grid>
@@ -120,7 +121,7 @@ class BlueMic extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='main'>
         <TopMenu/>
         <SecondMenu/>
         <BottomMenu/>
