@@ -14,11 +14,11 @@ class TopMenu extends React.Component {
             FREE SHIPPING ON ORDERS OVER $29
           </Header>
         </Menu.Item>
-        <Menu.Item position='right'>
-          <Label style={{ backgroundColor: '#363636', fontSize: '15px' }}>
+        <Menu.Item position='right' style={{ backgroundColor: '#363636', fontSize: '25px' }}>
+          <Label style={{ backgroundColor: '#363636', fontSize: '16px' }}>
             <Flag name='us flag'/>US<Dropdown>
             <Dropdown.Menu style={{ backgroundColor: '#363636' }}>
-              <Dropdown.Item> <i className="ca flag"/> CA (EN)</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="ca flag"/> CA (EN)</Dropdown.Item>
               <Dropdown.Item> <i className="ca flag"/> CA (FR)</Dropdown.Item>
               <Dropdown.Item> <i className="au flag"/> AU</Dropdown.Item>
               <Dropdown.Item> <i className="gb flag"/> GB</Dropdown.Item>
