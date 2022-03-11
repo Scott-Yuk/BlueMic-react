@@ -35,6 +35,13 @@
   margin-left: 13%;
 }
 
+.ui.borderless.productmenu.menu{
+  max-width: 73.9%;
+  margin-left: 13%;
+  margin-top: -14px;
+  margin-bottom: -14px;
+}
+
 .main {
   background-color: black;
 }

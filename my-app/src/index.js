@@ -94,7 +94,7 @@ class QuoteMenu extends React.Component {
 class ProductMenu extends React.Component {
   render() {
     return (
-      <Menu>
+      <Menu borderless className='productmenu'>
         <Container>
           <Grid columns={4}>
             <Grid.Row>
@@ -104,8 +104,161 @@ class ProductMenu extends React.Component {
                   <Card.Content>
                     <Card.Header>GAME STREAMERS</Card.Header>
                     <Card.Description>Get started on Twitch, Youtube Gaming or Facebook Gaming</Card.Description>
-
+                    <Card.Description><u>LEARN MORE</u></Card.Description>
                   </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-nano-shadow-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti nano</strong></Card.Header>
+                  <Card.Description textAlign='center'>$129.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeticaster.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeticaster</strong></Card.Header>
+                  <Card.Description textAlign='center'>$199.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-x-dark-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yetiX</strong></Card.Header>
+                  <Card.Description textAlign='center'>$169.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_youtubers-new.jpg' />
+                  <Card.Content>
+                    <Card.Header>YOUTUBERS</Card.Header>
+                    <Card.Description>Build the Ultimate Youtube Studio</Card.Description>
+                    <Card.Description><u>LEARN MORE</u></Card.Description>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_snowball-ice-gloss-white.jpg'/>
+                  <Card.Header textAlign='center'><strong>snowball ice</strong></Card.Header>
+                  <Card.Description textAlign='center'>$49.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti</strong></Card.Header>
+                  <Card.Description textAlign='center'>$129.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-x-dark-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yetiX</strong></Card.Header>
+                  <Card.Description textAlign='center'>$169.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_podcasters.jpg' />
+                  <Card.Content>
+                    <Card.Header>PODCASTERS</Card.Header>
+                    <Card.Description>Setup Your Own Broadcast Studio</Card.Description>
+                    <Card.Description><u>LEARN MORE</u></Card.Description>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-nano-shadow-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti nano</strong></Card.Header>
+                  <Card.Description textAlign='center'>$99.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti</strong></Card.Header>
+                  <Card.Description textAlign='center'>$129.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_spark-sl-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>blackout sparkSL</strong></Card.Header>
+                  <Card.Description textAlign='center'>$199.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_music-makers-new.jpg' />
+                  <Card.Content>
+                    <Card.Header>MUSIC MAKERS</Card.Header>
+                    <Card.Description>Start Recording in Your Home Studio</Card.Description>
+                    <Card.Description><u>LEARN MORE</u></Card.Description>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti</strong></Card.Header>
+                  <Card.Description textAlign='center'>$129.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-x-dark-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yetiX</strong></Card.Header>
+                  <Card.Description textAlign='center'>$169.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_spark-sl-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>blackout sparkSL</strong></Card.Header>
+                  <Card.Description textAlign='center'>$199.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home_getting-started_work-from-home.jpg' />
+                  <Card.Content>
+                    <Card.Header>WORK FROM HOME</Card.Header>
+                    <Card.Description>Crystal-Clear Communication For Work, School And Online Activities</Card.Description>
+                    <Card.Description><u>LEARN MORE</u></Card.Description>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_snowball-ice-gloss-white.jpg'/>
+                  <Card.Header textAlign='center'><strong>snowball ice</strong></Card.Header>
+                  <Card.Description textAlign='center'>$49.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-nano-shadow-grey.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti nano</strong></Card.Header>
+                  <Card.Description textAlign='center'>$99.99 <i class='cart icon'/></Card.Description>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/home-creators-feature_yeti-blackout.jpg'/>
+                  <Card.Header textAlign='center'><strong>yeti</strong></Card.Header>
+                  <Card.Description textAlign='center'>$129.99 <i class='cart icon'/></Card.Description>
                 </Card>
               </Grid.Column>
             </Grid.Row>
