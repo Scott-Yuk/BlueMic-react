@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Dropdown, Flag, Grid, Header, Icon, Image, Label, List, Menu } from 'semantic-ui-react';
+import { Button, Dropdown, Grid, Header, Icon, Image, Label, List, Menu, Card, Container } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
@@ -14,34 +14,34 @@ class TopMenu extends React.Component {
             FREE SHIPPING ON ORDERS OVER $29
           </Header>
         </Menu.Item>
-        <Menu.Item position='right' style={{ backgroundColor: '#363636', fontSize: '25px' }}>
-          <Label style={{ backgroundColor: '#363636', fontSize: '16px' }}>
-            <Flag name='us flag'/>US<Dropdown>
+        <Menu.Item position='right'>
+          <Label style={{ backgroundColor: '#363636', fontSize: '10px', size: '10px' }}>
+            <i className="us flag"/> <Dropdown text='US'>
             <Dropdown.Menu style={{ backgroundColor: '#363636' }}>
               <Dropdown.Item className='text'> <i className="ca flag"/> CA (EN)</Dropdown.Item>
-              <Dropdown.Item> <i className="ca flag"/> CA (FR)</Dropdown.Item>
-              <Dropdown.Item> <i className="au flag"/> AU</Dropdown.Item>
-              <Dropdown.Item> <i className="gb flag"/> GB</Dropdown.Item>
-              <Dropdown.Item> <i className="fr flag"/> FR</Dropdown.Item>
-              <Dropdown.Item> <i className="jp flag"/> JP</Dropdown.Item>
-              <Dropdown.Item> <i className="de flag"/> DE</Dropdown.Item>
-              <Dropdown.Item> <i className="ca flag"/> ES</Dropdown.Item>
-              <Dropdown.Item> <i className="nl flag"/> NL</Dropdown.Item>
-              <Dropdown.Item> <i className="se flag"/> SE</Dropdown.Item>
-              <Dropdown.Item> <i className="dk flag"/> DK</Dropdown.Item>
-              <Dropdown.Item> <i className="no flag"/> NO</Dropdown.Item>
-              <Dropdown.Item> <i className="fi flag"/> FI</Dropdown.Item>
-              <Dropdown.Item> <i className="cn flag"/> CN</Dropdown.Item>
-              <Dropdown.Item> <i className="kr flag"/> KR</Dropdown.Item>
-              <Dropdown.Item> <i className="ru flag"/> RU</Dropdown.Item>
-              <Dropdown.Item> <i className="br flag"/> BR</Dropdown.Item>
-              <Dropdown.Item> <i className="ar flag"/> AR</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="ca flag"/> CA (FR)</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="au flag"/> AU</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="gb flag"/> GB</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="fr flag"/> FR</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="jp flag"/> JP</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="de flag"/> DE</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="ca flag"/> ES</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="nl flag"/> NL</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="se flag"/> SE</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="dk flag"/> DK</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="no flag"/> NO</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="fi flag"/> FI</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="cn flag"/> CN</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="kr flag"/> KR</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="ru flag"/> RU</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="br flag"/> BR</Dropdown.Item>
+              <Dropdown.Item className='text'> <i className="ar flag"/> AR</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           </Label>
         </Menu.Item>
       </Menu>
-    )
+    );
   }
 }
 
@@ -62,7 +62,57 @@ class SecondMenu extends React.Component {
           </Menu.Item>
         </Menu>
       </Menu>
-    )
+    );
+  }
+}
+
+class ImageMenu extends React.Component {
+  render() {
+    return (
+      <Grid className='imagemenu'>
+        <Image size='massive' src="ui image" src="https://s3.amazonaws.com/cd.bluemic.com/img/new-homepage/Raise-Your-Voice-Desktop.jpg" centered/>
+      </Grid>
+    );
+  }
+}
+
+class QuoteMenu extends React.Component {
+  render() {
+    return (
+      <Menu borderless className='quotemenu'>
+        <Header as='h3' textAlign='center' style={{ color: 'white' }}>
+          <p>Blue's condenser microphones are some of the most highly-coveted out there
+          because of the craftsmanship and attention to detail that goes into building
+            each one.</p>
+          -Gizmodo
+        </Header>
+      </Menu>
+    );
+  }
+}
+
+class ProductMenu extends React.Component {
+  render() {
+    return (
+      <Menu>
+        <Container>
+          <Grid columns={4}>
+            <Grid.Row>
+              <Grid.Column>
+                <Card>
+                  <Image src='https://s3.amazonaws.com/cd.bluemic.com/img/npr/getting-started-game-streamers-desktop.jpg' />
+                  <Card.Content>
+                    <Card.Header>GAME STREAMERS</Card.Header>
+                    <Card.Description>Get started on Twitch, Youtube Gaming or Facebook Gaming</Card.Description>
+
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
+      </Menu>
+    );
   }
 }
 
@@ -73,9 +123,9 @@ class BottomMenu extends React.Component {
         <Grid container columns="four">
           <Grid.Column>
             <Image size='huge' src="https://s3.amazonaws.com/cd.bluemic.com/img/layout/logo_footer.svg"/>
-            <Header style={{fontSize: '10px', color: 'white', marginTop: '5px' }} textAlign='center'>
+            <Header style={{ fontSize: '10px', color: 'white', marginTop: '5px' }} textAlign='center'>
               © Blue (Baltic Latvian Universal Electronics, LLC) 2022.
-              <Header style={{fontSize: '10px', color: 'white' }} textAlign='center'>All rights reserved.</Header>
+              <Header style={{ fontSize: '10px', color: 'white' }} textAlign='center'>All rights reserved.</Header>
             </Header>
           </Grid.Column>
           <Grid.Column>
@@ -112,7 +162,7 @@ class BottomMenu extends React.Component {
           </Grid.Column>
         </Grid>
       </List.Item>
-    )
+    );
   }
 }
 
@@ -124,6 +174,9 @@ class BlueMic extends React.Component {
       <div className='main'>
         <TopMenu/>
         <SecondMenu/>
+        <ImageMenu/>
+        <QuoteMenu/>
+        <ProductMenu/>
         <BottomMenu/>
       </div>
     );
